@@ -1,1 +1,1 @@
-https://42-cursus.gitbook.io/guide/exams/exam-rank-02
+This Repo has exerecises with solutions from the 42 Common Core Rank 02

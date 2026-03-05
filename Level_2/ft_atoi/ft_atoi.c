@@ -29,18 +29,8 @@ int	ft_atoi(const char *str)
     while(isdigit(str[i]))
     {
         res *=10;
-        res += (str[i] - 48);
+        res += (str[i] + '0');
         i++;
     }
-
     return (res * s);
-}
-
-int main(int argc, char **argv)
-{
-    if (argc == 2)
-        printf("%d\n", ft_atoi(argv[1]));
-    else
-        printf("Usage: %s <number>\n", argv[0]);
-    return 0;
 }

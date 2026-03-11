@@ -6,12 +6,6 @@ char	*ft_itoa(int nbr)
     int len = (n <= 0);
     char *str;
 
-    while(nbr)
-    {
-        len++;
-        nbr /= 10;
-    }
-
     if (n == -2147483648)
     {
         str = malloc(12);
@@ -21,6 +15,12 @@ char	*ft_itoa(int nbr)
         str[4] = '7'; str[5] = '4'; str[6] = '8'; str[7] = '3';
         str[8] = '6'; str[9] = '4'; str[10] = '8'; str[11] = '\0';
         return (str);
+    }
+
+    while(nbr)
+    {
+        len++;
+        nbr /= 10;
     }
 
     str = malloc(len + 1);

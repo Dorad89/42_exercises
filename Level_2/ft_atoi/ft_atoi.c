@@ -29,7 +29,7 @@ int	ft_atoi(const char *str)
     while(isdigit(str[i]))
     {
         res *=10;
-        res += (str[i] + '0');
+        res += (str[i] - '0');
         i++;
     }
     return (res * s);

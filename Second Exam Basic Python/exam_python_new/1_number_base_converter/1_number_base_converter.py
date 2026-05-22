@@ -1,4 +1,7 @@
-#Write a function that converts a number from one base to another.Supported bases from 2 to 36 in clusive, using digits 0-9 and letters A-Z for values 10-35.Return  "ERROR" for invalid inputs(base,digits)
+#Write a function that converts a number from one base to another.
+# Supported bases from 2 to 36 in clusive, 
+# using digits 0-9 and letters A-Z for values 10-35.
+# Return  "ERROR" for invalid inputs(base,digits)
 #def number_base_converter(number: str, from_base: int, to_base: int) -> str:
 
 def number_base_converter(number: str, from_base: int, to_base: int) -> str:
@@ -28,4 +31,4 @@ print(number_base_converter("Z", 36, 10))     # Output: "35"
 print(number_base_converter("123", 10, 2))    # Output: "1111011"
 print(number_base_converter("123", 10, 37))   # Output: "ERROR"
 print(number_base_converter("1G", 16, 10))    # Output: "ERROR"
-print(number_base_converter("1A", 10, 16))    # Output: "ERROR"
+print(number_base_converter("200", 10, 15))    # Output: "ERROR"

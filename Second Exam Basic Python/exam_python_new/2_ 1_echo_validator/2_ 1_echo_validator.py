@@ -1,4 +1,6 @@
-#write a function that checks if a string is palindrome, ignoring spaces and case, only consider alphabetic characters for the comparison.The function should return True if the string is a palindrome and False otherwise.
+#write a function that checks if a string is palindrome, 
+#ignoring spaces and case, only consider alphabetic characters for the comparison.
+#The function should return True if the string is a palindrome and False otherwise.
 
 def echo_validator(text: str) -> bool:
 	cleaned = ""

@@ -1,0 +1,2 @@
+def mirror_matrix(arr: list[list[int]]) -> list[list[int]]:
+    

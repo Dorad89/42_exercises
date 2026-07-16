@@ -22,12 +22,6 @@ def sliding_w_m(nums: list[int], k: int) -> list[int]:
     return [max(nums[i:i+k]) for i in range(len(nums) - k + 1)]
 
 
-    if not nums or k <= 0 or k > len(nums):
-        return []
-    
-    return [max(nums[i:i+k]) for i in range(len(nums) - k + 1)]
-
-
 print(sliding_w_m([1, 2, 3, 1, 4, 5, 2, 3, 6], 3))
 print(sliding_w_m([1], 3))
 print(sliding_w_m([1, 2, 3], 2))

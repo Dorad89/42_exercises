@@ -1,30 +1,5 @@
-# def arr_rotation_detector(arr1: list[int], arr2: list[int]) -> bool:
-
-#     if len(arr1) != len(arr2):
-#         return False
-    
-#     if not arr1:
-#         return True
-
-#     for i in range(len(arr1)):
-#         if arr1 == arr2:
-#             return True
-#         arr1.append(arr1.pop(0))
-
-#     return False    
-
-# def arr_rotation_detector(arr1: list[int], arr2: list[int]) -> bool:
-
-#     if len(arr1) != len(arr2):
-#         return False
-    
-#     if not arr1:
-#         return True
-
-#     for i in range(len(arr1)):
-#         if arr1[i] == arr2[len(arr1) - 1 - i]:
-#             return True
-#     return False    
+#Subject: Given two arrays, determine whether arr2 is a rotation of arr1 
+#(i.e. arr2 equals arr1 shifted circularly by some amount).
 
 def arr_rotation_detector(arr1: list[int], arr2: list[int]) -> bool:
     
@@ -36,6 +11,17 @@ def arr_rotation_detector(arr1: list[int], arr2: list[int]) -> bool:
     
     for i in range(len(arr1)):
         if arr1[i] == arr2[- 1 - i]:
+            return True
+    return False
+
+# Claude version
+def arr_rotation_detector(arr1: list[int], arr2: list[int]) -> bool:
+    if len(arr1) != len(arr2):
+        return False
+    if not arr1:
+        return True
+    for i in range(len(arr1)):
+        if arr1[i:] + arr1[:i] == arr2:
             return True
     return False
 

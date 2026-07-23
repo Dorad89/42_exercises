@@ -1,8 +1,11 @@
-#def merge_sort_unique(list):
-#	result = set()
-#	for lst in list:
-#		result.update(lst)
-#	return sorted(result)
+#Subject: Given a list of lists,
+#merge all elements into a single sorted list with duplicates removed.
+
+def merge_sort_unique(lists: list[list[int]]) -> list[int]:
+    merged = set()
+    for lst in lists:
+        merged.update(lst)
+    return sorted(merged)
 
 
 def merge_sort_unique(lists):

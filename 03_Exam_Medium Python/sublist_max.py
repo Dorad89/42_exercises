@@ -1,3 +1,7 @@
+##Subject: Given an array and window size k,
+#return the maximum of every contiguous window of length k,
+#left to right.
+
 def sliding_w_m(ar, k):
     length = len(ar)
     result = []

@@ -7,9 +7,4 @@ def merge_sort_unique(lists: list[list[int]]) -> list[int]:
         merged.update(lst)
     return sorted(merged)
 
-
-def merge_sort_unique(lists):
-    return sorted(set(x for y in lists for x in y))
-
-lists = [[1, 3, 5], [2, 3, 6], [1, 7]]
-print(merge_sort_unique(lists))
+# print(merge_sort_unique([[1, 3, 5], [2, 3, 6], [1, 7]]))
